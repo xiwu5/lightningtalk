@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xi Wu's Art World - Chopsticks</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 40px;
+            justify-items: center;
+        }
+        .gallery img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        @media (max-width: 900px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .gallery img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+            .gallery img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Doodles</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="chopsticks.html">Chopsticks</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">More</a>
+                    <div class="dropdown-content">
+                        <a href="about.html">About</a>
+                        <a href="services.html">What I Bring</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Foodie</h1>
+        <div class="gallery">
+            <img src="beef.jpg" alt="Dish 1">
+            <img src="octopus.jpg" alt="Dish 2">
+            <img src="salmon+tea.jpg" alt="Dish 3">
+            <img src="sushi cup.jpg" alt="Dish 4">
+            <img src="chicken soup.jpg" alt="Dish 5">
+            <img src="steak.jpg" alt="Dish 6">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Xi Wu's World</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xi Wu's Art World - Doodles</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        justify-items: center;
+        padding: 0 20px;
+    }
+
+    .gallery img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+        transform: scale(1.05);
+    }
+
+    @media (max-width: 700px) {
+        .gallery {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media (max-width: 400px) {
+        .gallery {
+            grid-template-columns: 1fr;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Doodles</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="chopsticks.html">Chopsticks</a></li>i
+                <li><a href="music.html">Music</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">More</a>
+                    <div class="dropdown-content">
+                        <a href="about.html">About</a>
+                        <a href="What I Bring">Services</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>My Doodles</h1>
+        <div class="gallery">
+            <img src="Cover of Little Planet小星球.jpeg" alt="Doodle 1">
+            <img src="成年人.jpeg" alt="Doodle 2">
+            <img src="花卷.jpeg" alt="Doodle 3">
+            <img src="夏天.jpeg" alt="Doodle 4">
+            <img src="我最胖你最棒.jpeg" alt="Doodle 5">
+            <img src="辛迪芭比.jpeg" alt="Doodle 6">
+            <img src="climbing shoes.jpg" alt="Doodle 7">
+            <img src="foodie.jpg" alt="Doodle 8">
+            <img src="bee.jpg" alt="Doodle 9">
+            <img src="goose.png" alt="Doodle 10">
+            <img src="flower.png" alt="Doodle 11">
+            <img src="duck.png" alt="Doodle 12">
+            
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Xi Wu's World</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
